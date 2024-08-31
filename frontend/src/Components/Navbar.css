@@ -1,0 +1,130 @@
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 0.4rem 0rem 0.4rem 0rem;
+    font-size: 1rem;
+    transition: top 0.3s;
+    z-index: 1000;
+    /* border: 2px solid black; */
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin-right: 2rem;
+    /* border: 1px solid black;     */
+}
+
+.link a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--palette-black);
+}
+
+.link{
+    margin: 0 0.7rem 0 0.7rem;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: var(--palette-black);
+    position: absolute;
+    left: 0; 
+    bottom: -4px;
+    opacity: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    pointer-events: none;
+}
+
+.link:hover::after, 
+.link:focus::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* .login {
+    background-color: var(--palette-black);
+    border: 1px solid var(--palette-black);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.login a{
+    text-decoration: none;
+    color: var(--background-color);
+} */
+
+button {
+    --primary-color: var(--palette-black);
+    --secondary-color: var(--background-color);
+    --hover-color: #111;
+    --arrow-width: 1rem;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0.3rem;
+    color: var(--secondary-color);
+    padding: 0.6rem 0.75rem;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.3em;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before 
+  {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover 
+  {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }

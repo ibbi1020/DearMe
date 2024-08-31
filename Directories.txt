@@ -1,0 +1,113 @@
+future-messages-project/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Auth/
+│   │   │   │   ├── Login.js
+│   │   │   │   ├── Register.js
+│   │   │   ├── Messages/
+│   │   │   │   ├── CreateMessage.js
+│   │   │   │   ├── MessageList.js
+│   │   │   ├── Layout/
+│   │   │   │   ├── Header.js
+│   │   │   │   ├── Footer.js
+│   │   ├── context/
+│   │   │   ├── AuthContext.js
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   │   ├── Home.js
+│   │   │   ├── Dashboard.js
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   ├── styles/
+│   │   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── package.json
+│   ├── .env
+│   ├── .gitignore
+│   ├── README.md
+│
+├── backend/
+│   ├── future_messages_backend/
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── celery.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   ├── .env
+│   │   ├── .gitignore
+│   │   ├── README.md
+│   │
+│   ├── messages/
+│   │   ├── migrations/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tasks.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   ├── views.py
+│   │
+│   ├── manage.py
+│   ├── requirements.txt
+│
+├── .gitignore
+├── README.md
+
+
+
+
+frontend/
+
+public/: Contains the public assets such as the index.html file.
+src/: Contains the source code for the React application.
+components/: Contains the React components.
+Auth/: Contains authentication-related components like Login.js and Register.js.
+Messages/: Contains message-related components like CreateMessage.js and MessageList.js.
+Layout/: Contains layout components like Header.js and Footer.js.
+context/: Contains the context API setup, such as AuthContext.js.
+hooks/: Custom hooks for the React app.
+pages/: Contains the main pages of the application like Home.js and Dashboard.js.
+services/: Contains service functions for making API calls, like api.js.
+styles/: Contains the CSS files for styling the application.
+
+App.js: The main application component.
+index.js: The entry point for the React application.
+package.json: Contains the dependencies and scripts for the frontend.
+.env: Environment variables for the frontend.
+.gitignore: Files and directories to be ignored by Git.
+README.md: Documentation for the frontend.
+
+
+backend/
+
+future_messages_backend/: The main Django project directory.
+init.py: Marks the directory as a Python package.
+asgi.py: ASGI configuration.
+celery.py: Celery configuration.
+settings.py: Django project settings.
+urls.py: URL configuration for the project.
+wsgi.py: WSGI configuration.
+.env: Environment variables for the backend.
+.gitignore: Files and directories to be ignored by Git.
+README.md: Documentation for the backend.
+
+messages/: The Django app for handling messages.
+migrations/: Database migrations for the messages app.
+init.py: Marks the directory as a Python package.
+admin.py: Admin interface configuration.
+apps.py: App configuration.
+models.py: Models for the messages app.
+serializers.py: Serializers for the messages app.
+tasks.py: Celery tasks for the messages app.
+tests.py: Tests for the messages app.
+urls.py: URL configuration for the messages app.
+
+views.py: Views for the messages app.
+manage.py: Django's command-line utility.
+requirements.txt: Python dependencies for the backend.

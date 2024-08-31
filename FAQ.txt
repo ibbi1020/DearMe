@@ -1,0 +1,18 @@
+1. What is this web app for?
+Answer: This app lets you send a letter or message to your future self. It’s a fun and thoughtful way to capture your current thoughts, goals, and memories for a future date.
+2. Why should I send a message to my future self?
+Answer: It’s a unique way to reflect on your growth, keep track of your goals, and remind your future self of the person you are today. It’s like a personal time capsule!
+3. Is my message safe and private?
+Answer: Yes, your message is securely stored and only delivered to your email. We take your privacy seriously and ensure that your personal messages remain confidential.
+4. Can I edit or delete my message after I’ve sent it?
+Answer: Once your message is scheduled, it’s locked in to ensure authenticity. However, you can always write and schedule a new one if you change your mind!
+5. What happens if I don’t receive my message?
+Answer: If your message doesn't arrive on the scheduled date, please check your spam folder first. If it's still missing, you can contact our support team for assistance.
+6. Can I send messages to other people’s future selves?
+Answer: Currently, our service is designed for sending messages to your own future self. This helps keep the experience personal and focused on your journey.
+7. What if I want to send a message more than a year from now?
+Answer: You can schedule your message for any future date, whether it’s a few months away or several years down the road.
+8. How will I know that my message was successfully scheduled?
+Answer: You’ll receive a confirmation email right after scheduling your message, so you know it’s all set and ready to be delivered.
+9. Can I use this service for free?
+Answer: Yes! Our service is completely free to use, so you can send as many future messages as you like.

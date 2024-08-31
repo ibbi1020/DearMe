@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'GalanoGrotesqueDEMO';
+  src: url('Font/GalanoGrotesqueDEMO-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --background-color: #FFF9EB;
+  --palette-black: #313131;
+  --palette-yellow: #FFE359;
+  --palette-blue: #59ACFF;
+  --palette-red: #FF7040;
+}
+
+html {
+  background-color: var(--background-color);
+  color: var(--palette-black);
+  font-family: 'GalanoGrotesqueDEMO', 'Montserrat' sans-serif;
+  text-decoration: none;
+}
