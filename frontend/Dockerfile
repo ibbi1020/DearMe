@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/javascript-node
 
-WORKDIR /workspaces/FASTime/frontend/
+WORKDIR /workspaces/DearMe/frontend/
 
 COPY package*.json .
 
