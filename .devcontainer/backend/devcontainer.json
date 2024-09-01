@@ -1,0 +1,15 @@
+{
+    "name": "Backend Dev Container",
+    "service": "backend",
+    "workspaceFolder": "/workspace/backend",
+    "shutdownAction": "stopCompose",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "customizations": {
+        "vscode": {
+            "extensions": [ "ms-python.python" ],
+            "settings": {}
+        }
+    },
+    "forwardPorts": [],
+    "portsAttributes": {}
+}

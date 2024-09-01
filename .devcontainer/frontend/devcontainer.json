@@ -1,0 +1,20 @@
+{
+    "name": "Frontend Dev Container",
+    "service": "frontend",
+    "workspaceFolder": "/workspace/frontend",
+    "shutdownAction": "stopCompose",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "settings": {}
+        }
+    },
+    "forwardPorts": [ 3000 ],
+    "portsAttributes": {
+        "3000": {
+            "label": "Frontend",
+            "onAutoForward": "notify"
+        }
+    }
+}
