@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './AnimatedTitle.css';
-
 import Pencil from '../Images/Pencil.png';
 
 export default function AnimatedTitle() {
-    const [size, setSize] = useState(20); // Start with initial size of 20%
+    const [size, setSize] = useState(0); 
 
     useEffect(() => {
         const animateSize = () => {
@@ -13,37 +12,39 @@ export default function AnimatedTitle() {
             // After 10 seconds, decrease the size to 0% (hidden)
             setTimeout(() => {
                 setSize(0);
-            }, 10000);
+            }, 3000);
         };
 
         const startAnimation = () => {
-            const randomInterval = Math.random() * 6000 + 5000; // Random interval between 5-10 seconds
+            // const randomInterval = Math.random() * 9000 + 5000;
             setTimeout(() => {
                 animateSize();
-                startAnimation(); // Recursively start the next animation
-            }, randomInterval);
+                startAnimation();
+            }, 5000);
         };
 
-        startAnimation(); // Start the animation sequence
+        startAnimation();
 
-        return () => {}; // Cleanup if needed, though not necessary here
+        return () => {};
     }, []);
 
     return (
         <>
             <div className="mainTitle">
-                <h1>
+                <h1 style={{ display: 'flex', alignItems: 'center' }}>
                     Dear
                     <span 
                         className="pencilContainer"
                         style={{
-                            display: 'inline-flex',
-                            width: `${size > 0 ? '20%' : '0'}`, 
-                            height: `${size}%`, 
-                            overflow: 'hidden',
+                            display: 'inline-block',
+                            width: `${size}%`,
+                            height: `${size}%`,
+                            // overflow: 'hidden', // Prevent content overflow
+                            transition: 'width 0.5s ease, height 0.5s ease', // Smooth transition
+                            margin: `0 ${-size / 7.7}rem 1rem ${-size/9}rem`, // Dynamic margin based on size
                         }}
                     >
-                        {size > 0 && ( // Only render the image if the size is greater than 0
+                        {size > 0 && (
                             <img
                                 style={{
                                     width: '100%',
