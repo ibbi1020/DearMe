@@ -1,4 +1,5 @@
-import React, {useRef} from 'react'
+import React from 'react'
+import HeroSection from '../Components/HeroSection';
 import './Home.css'
 
 import HowToSection from '../Components/HowToSection'
@@ -29,6 +30,7 @@ const stepsContent = [
 const Home = () => {
     return(
         <>
+            <HeroSection/>
             <div className="headingContainer">
                 <h1>How It Works</h1>
                 <p>Whether its your hopes or anxieties. Capture today’s thoughts and deliver them to your future self when you need them most!</p>

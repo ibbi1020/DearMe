@@ -37,7 +37,7 @@
 .link::after {
     content: '';
     height: 2px;
-    width: 0%;
+    width: 100%;
     background: var(--palette-black);
     position: absolute;
     left: 0; 
