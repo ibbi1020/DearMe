@@ -4,3 +4,11 @@ services:
     volumes:
       - .:/workspace:cached
     command: sleep infinity
+    depends_on:
+      - backend
+      
+  backend:
+    build: ./backend/
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity
