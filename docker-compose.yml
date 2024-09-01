@@ -1,0 +1,6 @@
+services:  
+  frontend:
+    build: ./frontend/
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity
